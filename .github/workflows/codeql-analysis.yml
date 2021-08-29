@@ -31,8 +31,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        python -m pip install -e .[dev]
+        python3 -m pip install --upgrade --user pip
+        python3 -m pip install --user -e .
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
